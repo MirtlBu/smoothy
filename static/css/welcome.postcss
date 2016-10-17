@@ -1,0 +1,104 @@
+.welcome {
+    color: var(--text-color-dark);
+    padding: 60px 0;
+    text-align: center;
+
+    &__content {
+        display: flex;
+    }
+
+
+    &__part {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+
+        &--circle {
+            flex: 2;
+            margin: 0 100px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 35px;
+    }
+
+    &__title {
+        font-size: 20px;
+        text-transform: capitalize;
+        margin-bottom: 10px;
+    }
+
+    &__img {
+        width: 94px;
+        height: 89px;
+        margin-bottom: 15px;
+        background-image: url(../img/handrawn-circles.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+
+        & img {
+            width: 48px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.stay {
+    height: 100%;
+    background-image: url(../img/veggies1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 50% 50%;
+    position: relative;
+
+    &__circle {
+        width: 260px;
+        height: 260px;
+        border-radius: 50%;
+        background-color: var(--text-color-light);
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 50%;
+        transform: translateY(-50%);
+        box-shadow: 0px 0px 30px 1px rgba(50, 50, 50, 0.75);
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 230px;
+            height: 230px;
+            border-radius: 50%;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 1px solid var(--color-light-green);
+        }
+    }
+
+    &__text {
+        color: var(--color-light-green);
+        font-size: 30px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        line-height: 48px;
+        letter-spacing: 2px;
+    }
+}

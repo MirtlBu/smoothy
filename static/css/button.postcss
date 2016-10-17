@@ -1,0 +1,33 @@
+.button {
+    border-radius: 20px;
+    color: var(--text-color-light);
+    background-color: var(--color-light-green);
+    font-family: var(--cuprum-font);
+    font-size: 16px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: color(var(--color-light-green) lightness(40%));
+    }
+}
+
+.button--big {
+    text-transform: uppercase;
+    padding: 10px 55px;
+    letter-spacing: 1px;
+}
+
+.button--small {
+    padding: 10px 40px;
+}
+
+.button--inverted {
+    color: var(--text-color-medium);
+    background-color: transparent;
+    border: 1px solid var(--text-color-medium);
+
+    &:hover {
+        color: var(--text-color-light);
+        background-color: var(--text-color-medium);
+    }
+}

@@ -1,0 +1,1 @@
+Smoothy landing page
